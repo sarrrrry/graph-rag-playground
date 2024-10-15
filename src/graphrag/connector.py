@@ -1,4 +1,5 @@
-from graphrag.driver import CfgNeo4j, build_neo4j_driver
+from graphrag.driver import build_neo4j_driver
+from graphrag.infra.dotenv_file import CfgNeo4j
 from graphrag.schemas.sample_data import SampleDataSchema
 
 

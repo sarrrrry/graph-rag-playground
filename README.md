@@ -4,7 +4,7 @@
 
 - launch neo4j with docker
     ```bash
-    docker run --publish=7474:7474 --publish=7687:7687 --volume=./data/db/neo4j/:/data neo4j
+    bash 
     ```
 
 - create .env file referring to .env.example
@@ -13,15 +13,20 @@
     NEO4J_PASSWORD=neo4j
     ```
 
+- access to localhost:7474 and set username and password for neo4j
+  - http://localhost:7474
+  - default password is `neo4j`
+
 - install dependencies
     ```bash
     uv sync
     ```
 
-- サンプルデータを登録
+- insert sample data
     ```bash
-    uv run src/graphrag/insert_sample_data.py
+    uv run src/tasks/insert_sample_data.py
     ```
+
 ## run
 
 ```dotenv

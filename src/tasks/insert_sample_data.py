@@ -4,7 +4,7 @@ c.f. [Neo4j + Pythonの使い方あれこれ #Python3 - Qiita](https://qiita.com
 
 from graphrag import PROJECT_ROOT
 from graphrag.connector import SampleDataTable
-from graphrag.driver import CfgNeo4j
+from graphrag.infra.dotenv_file import CfgNeo4j
 from graphrag.schemas.sample_data import SampleDataSchema
 
 
